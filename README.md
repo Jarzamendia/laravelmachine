@@ -1,1 +1,10 @@
+PRONTO
 
+Mysql 5.7.25
+NGINX 1.14.2
+PHP-FPM 7.2
+ELASTICSEARCH 6.2.3
+REDIS: latest
+
+A FAZER
+CertBot

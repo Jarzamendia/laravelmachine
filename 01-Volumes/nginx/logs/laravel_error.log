@@ -1,0 +1,123 @@
+2019/02/12 18:47:32 [info] 13#13: *2 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/12 18:47:36 [error] 12#12: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(../_php/include.php): failed to open stream: No such file or directory in /var/www/site/original/index.php on line 2PHP message: PHP Fatal error:  require_once(): Failed opening required '../_php/include.php' (include_path='.:/usr/local/lib/php') in /var/www/site/original/index.php on line 2" while reading response header from upstream, client: 172.18.0.1, server: default, request: "GET /original/ HTTP/1.1", upstream: "fastcgi://10.0.7.5:9000", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2019/02/12 18:47:38 [error] 12#12: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(../_php/include.php): failed to open stream: No such file or directory in /var/www/site/everything_concatenated/index.php on line 2PHP message: PHP Fatal error:  require_once(): Failed opening required '../_php/include.php' (include_path='.:/usr/local/lib/php') in /var/www/site/everything_concatenated/index.php on line 2" while reading response header from upstream, client: 172.18.0.1, server: default, request: "GET /everything_concatenated/ HTTP/1.1", upstream: "fastcgi://10.0.7.5:9000", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2019/02/12 18:48:04 [info] 13#13: *3 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/12 18:51:54 [info] 13#13: *31 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:51:54 [info] 12#12: *30 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:51:54 [info] 12#12: *32 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:51:54 [info] 12#12: *33 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:51:57 [info] 12#12: *34 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:51:57 [info] 12#12: *35 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:52:02 [info] 13#13: *39 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:52:12 [info] 13#13: *41 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:52:14 [info] 12#12: *38 client 172.18.0.1 closed keepalive connection
+2019/02/12 18:52:14 [info] 13#13: *44 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:52:23 [info] 12#12: *43 client 172.18.0.1 closed keepalive connection
+2019/02/12 18:52:29 [info] 12#12: *48 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:52:29 [info] 12#12: *47 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:52:31 [info] 13#13: *53 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:52:32 [info] 13#13: *55 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:52:33 [info] 12#12: *58 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:52:34 [info] 12#12: *60 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:52:34 [info] 13#13: *61 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:52:35 [info] 12#12: *64 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:52:38 [info] 13#13: *65 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:52:39 [info] 13#13: *67 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:52:40 [info] 13#13: *70 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:52:42 [info] 13#13: *74 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:57:19 [info] 12#12: *77 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:57:19 [info] 12#12: *76 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:57:21 [info] 13#13: *87 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/12 18:58:29 [info] 11#11: *6 client 172.18.0.1 closed keepalive connection
+2019/02/12 18:59:27 [info] 11#11: *25 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 11:05:37 [info] 8#8: *12 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 11:05:37 [info] 10#10: *13 client closed connection while SSL handshaking, client: 172.18.0.1, server: 0.0.0.0:443
+2019/02/13 14:17:42 [info] 8#8: *2 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 14:17:42 [info] 8#8: *3 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 14:17:52 [info] 8#8: *5 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 14:17:52 [info] 8#8: *4 client 172.18.0.1 closed keepalive connection
+2019/02/13 14:17:57 [error] 8#8: *8 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/1.1", host: "127.0.0.1"
+2019/02/13 14:18:02 [info] 8#8: *8 client 172.18.0.1 closed keepalive connection
+2019/02/13 14:18:02 [info] 8#8: *9 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 14:30:26 [error] 8#8: *10 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/1.1", host: "127.0.0.1"
+2019/02/13 14:30:31 [error] 8#8: *10 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/1.1", host: "127.0.0.1"
+2019/02/13 14:30:32 [info] 11#11: *11 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 14:30:32 [info] 8#8: *10 client 172.18.0.1 closed keepalive connection
+2019/02/13 14:30:33 [error] 8#8: *12 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/1.1", host: "127.0.0.1"
+2019/02/13 14:30:42 [info] 8#8: *12 client 172.18.0.1 closed keepalive connection
+2019/02/13 14:30:42 [info] 8#8: *13 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 14:31:41 [error] 8#8: *20 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/2.0", host: "10.5.6.132"
+2019/02/13 14:31:45 [error] 8#8: *22 directory index of "/var/www/site/blog/app/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/app/ HTTP/2.0", host: "10.5.6.132"
+2019/02/13 14:31:48 [error] 8#8: *22 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/2.0", host: "10.5.6.132"
+2019/02/13 14:31:51 [error] 8#8: *22 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/2.0", host: "10.5.6.132"
+2019/02/13 14:31:51 [error] 8#8: *22 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/2.0", host: "10.5.6.132"
+2019/02/13 14:31:52 [error] 8#8: *22 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/2.0", host: "10.5.6.132"
+2019/02/13 14:31:52 [error] 8#8: *22 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/2.0", host: "10.5.6.132"
+2019/02/13 14:31:52 [error] 8#8: *22 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/2.0", host: "10.5.6.132"
+2019/02/13 14:31:53 [error] 8#8: *24 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/2.0", host: "10.5.6.132"
+2019/02/13 14:31:53 [error] 8#8: *24 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/2.0", host: "10.5.6.132"
+2019/02/13 14:31:53 [error] 8#8: *24 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/2.0", host: "10.5.6.132"
+2019/02/13 14:31:54 [error] 8#8: *24 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/2.0", host: "10.5.6.132"
+2019/02/13 14:31:54 [error] 8#8: *24 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/2.0", host: "10.5.6.132"
+2019/02/13 14:32:39 [error] 8#8: *26 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/var/www/site/blog/vendor/composer/autoload_real.php): failed to open stream: No such file or directory in /var/www/site/blog/vendor/autoload.php on line 5
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/var/www/site/blog/vendor/composer/autoload_real.php' (include_path='.:/usr/local/lib/php') in /var/www/site/blog/vendor/autoload.php on line 5" while reading response header from upstream, client: 172.18.0.1, server: default, request: "GET /blog/public/ HTTP/2.0", upstream: "fastcgi://10.0.17.5:9000", host: "10.5.6.132"
+2019/02/13 14:36:08 [error] 8#8: *28 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/1.1", host: "127.0.0.1"
+2019/02/13 14:36:09 [error] 8#8: *28 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/1.1", host: "127.0.0.1"
+2019/02/13 14:36:13 [info] 8#8: *29 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 14:36:13 [info] 8#8: *28 client 172.18.0.1 closed keepalive connection
+2019/02/13 14:36:28 [error] 8#8: *1 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/1.1", host: "127.0.0.1"
+2019/02/13 14:36:29 [error] 8#8: *1 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/1.1", host: "127.0.0.1"
+2019/02/13 14:36:29 [error] 8#8: *1 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/1.1", host: "127.0.0.1"
+2019/02/13 14:36:29 [error] 8#8: *1 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/1.1", host: "127.0.0.1"
+2019/02/13 14:36:29 [error] 8#8: *1 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/1.1", host: "127.0.0.1"
+2019/02/13 14:36:29 [error] 8#8: *1 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/1.1", host: "127.0.0.1"
+2019/02/13 14:36:30 [error] 8#8: *1 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/1.1", host: "127.0.0.1"
+2019/02/13 14:36:30 [error] 8#8: *1 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/1.1", host: "127.0.0.1"
+2019/02/13 14:36:33 [error] 8#8: *1 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/1.1", host: "127.0.0.1"
+2019/02/13 14:36:33 [info] 8#8: *1 client 172.18.0.1 closed keepalive connection
+2019/02/13 14:36:33 [info] 11#11: *2 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 14:36:38 [error] 8#8: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/var/www/site/blog/vendor/composer/autoload_real.php): failed to open stream: No such file or directory in /var/www/site/blog/vendor/autoload.php on line 5
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/var/www/site/blog/vendor/composer/autoload_real.php' (include_path='.:/usr/local/lib/php') in /var/www/site/blog/vendor/autoload.php on line 5" while reading response header from upstream, client: 172.18.0.1, server: default, request: "GET /blog/public/ HTTP/1.1", upstream: "fastcgi://10.0.17.5:9000", host: "127.0.0.1"
+2019/02/13 14:36:41 [error] 8#8: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/var/www/site/blog/vendor/composer/autoload_real.php): failed to open stream: No such file or directory in /var/www/site/blog/vendor/autoload.php on line 5
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/var/www/site/blog/vendor/composer/autoload_real.php' (include_path='.:/usr/local/lib/php') in /var/www/site/blog/vendor/autoload.php on line 5" while reading response header from upstream, client: 172.18.0.1, server: default, request: "GET /blog/public/ HTTP/1.1", upstream: "fastcgi://10.0.17.5:9000", host: "127.0.0.1"
+2019/02/13 14:36:43 [info] 11#11: *4 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 14:36:43 [info] 8#8: *3 client 172.18.0.1 closed keepalive connection
+2019/02/13 14:39:45 [error] 8#8: *2 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/var/www/site/blog/vendor/composer/autoload_real.php): failed to open stream: No such file or directory in /var/www/site/blog/vendor/autoload.php on line 5
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/var/www/site/blog/vendor/composer/autoload_real.php' (include_path='.:/usr/local/lib/php') in /var/www/site/blog/vendor/autoload.php on line 5" while reading response header from upstream, client: 172.18.0.1, server: default, request: "GET /blog/public/ HTTP/1.1", upstream: "fastcgi://10.0.17.5:9000", host: "127.0.0.1"
+2019/02/13 14:39:46 [error] 8#8: *2 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/var/www/site/blog/vendor/composer/autoload_real.php): failed to open stream: No such file or directory in /var/www/site/blog/vendor/autoload.php on line 5
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/var/www/site/blog/vendor/composer/autoload_real.php' (include_path='.:/usr/local/lib/php') in /var/www/site/blog/vendor/autoload.php on line 5" while reading response header from upstream, client: 172.18.0.1, server: default, request: "GET /blog/public/ HTTP/1.1", upstream: "fastcgi://10.0.17.5:9000", host: "127.0.0.1"
+2019/02/13 14:39:53 [info] 8#8: *2 client 172.18.0.1 closed keepalive connection
+2019/02/13 14:39:53 [info] 8#8: *1 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 14:39:53 [info] 8#8: *4 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 14:40:31 [error] 8#8: *7 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(/var/www/site/blog/vendor/composer/autoload_real.php): failed to open stream: No such file or directory in /var/www/site/blog/vendor/autoload.php on line 5
+PHP message: PHP Fatal error:  require_once(): Failed opening required '/var/www/site/blog/vendor/composer/autoload_real.php' (include_path='.:/usr/local/lib/php') in /var/www/site/blog/vendor/autoload.php on line 5" while reading response header from upstream, client: 172.18.0.1, server: default, request: "GET /blog/public/ HTTP/2.0", upstream: "fastcgi://10.0.17.5:9000", host: "127.0.0.1"
+2019/02/13 14:40:42 [error] 8#8: *10 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/2.0", host: "127.0.0.1"
+2019/02/13 15:23:55 [error] 12#12: *3 directory index of "/var/www/site/links/" is forbidden, client: 172.18.0.1, server: default, request: "GET /links/ HTTP/2.0", host: "127.0.0.1"
+2019/02/13 15:23:58 [error] 12#12: *3 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/2.0", host: "127.0.0.1"
+2019/02/13 15:23:59 [error] 12#12: *3 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/2.0", host: "127.0.0.1"
+2019/02/13 15:24:36 [error] 12#12: *3 directory index of "/var/www/site/links/" is forbidden, client: 172.18.0.1, server: default, request: "GET /links/ HTTP/2.0", host: "127.0.0.1"
+2019/02/13 15:24:52 [error] 12#12: *3 directory index of "/var/www/site/links/" is forbidden, client: 172.18.0.1, server: default, request: "GET /links/ HTTP/2.0", host: "127.0.0.1"
+2019/02/13 15:38:00 [error] 8#8: *2 directory index of "/var/www/site/links/" is forbidden, client: 172.18.0.1, server: default, request: "GET /links/ HTTP/2.0", host: "127.0.0.1"
+2019/02/13 15:51:01 [error] 8#8: *3 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/1.1", host: "127.0.0.1"
+2019/02/13 15:51:04 [error] 8#8: *3 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/1.1", host: "127.0.0.1"
+2019/02/13 15:51:15 [info] 11#11: *4 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 15:51:49 [error] 8#8: *7 directory index of "/var/www/site/links/" is forbidden, client: 172.18.0.1, server: default, request: "GET /links/ HTTP/1.1", host: "127.0.0.1"
+2019/02/13 15:52:02 [info] 11#11: *8 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 16:10:05 [info] 11#11: *12 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 16:13:33 [error] 8#8: *16 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/1.1", host: "127.0.0.1"
+2019/02/13 16:13:34 [error] 8#8: *16 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/1.1", host: "127.0.0.1"
+2019/02/13 16:13:34 [error] 8#8: *16 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/1.1", host: "127.0.0.1"
+2019/02/13 16:14:00 [info] 11#11: *1 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 16:15:12 [info] 10#10: *5 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 16:16:18 [info] 10#10: *8 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 16:17:57 [info] 11#11: *16 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 16:29:03 [info] 11#11: *2 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 16:52:44 [info] 9#9: *2 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 16:52:56 [info] 10#10: *3 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2019/02/13 16:53:22 [error] 8#8: *2 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/1.1", host: "127.0.0.1"
+2019/02/13 16:53:22 [error] 8#8: *2 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/1.1", host: "127.0.0.1"
+2019/02/13 16:53:22 [error] 8#8: *2 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/1.1", host: "127.0.0.1"
+2019/02/13 16:53:22 [error] 8#8: *2 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/1.1", host: "127.0.0.1"
+2019/02/13 16:53:23 [error] 8#8: *2 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/1.1", host: "127.0.0.1"
+2019/02/13 16:53:23 [error] 8#8: *2 directory index of "/var/www/site/" is forbidden, client: 172.18.0.1, server: default, request: "GET / HTTP/1.1", host: "127.0.0.1"
+2019/02/13 16:53:26 [error] 8#8: *2 directory index of "/var/www/site/blog/" is forbidden, client: 172.18.0.1, server: default, request: "GET /blog/ HTTP/1.1", host: "127.0.0.1"

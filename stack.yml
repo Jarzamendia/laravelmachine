@@ -1,0 +1,89 @@
+version: "3.3" #Versão do arquivo de configuração.
+
+services:
+
+  nginx:
+    image: "nginxjar"
+    volumes:
+      - d:/git/laravelmachine/03-app/app:/var/www/site
+      - d:/git/laravelmachine/01-Volumes/nginx/logs:/var/log/nginx
+      - d:/git/laravelmachine/01-Volumes/nginx/sites:/etc/nginx/sites-available
+      - d:/git/laravelmachine/01-Volumes/nginx/ssl:/etc/nginx/ssl
+    environment:
+      PHP_UPSTREAM_CONTAINER: php-fpm:9000
+    ports:
+        - target: 80
+          published: 80
+          protocol: tcp
+          mode: host
+
+        - target: 443
+          published: 443
+          protocol: tcp
+          mode: host
+    networks:
+      - frontend
+      - backend
+
+  php-fpm:
+    image: "phpjar"
+    environment:
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_DATABASE=app_db
+      - DB_USERNAME=app_user
+      - DB_PASSWORD=app_password
+      - REDIS_HOST=redis
+      - REDIS_PASSWORD=my_master_password
+      - REDIS_PORT=6379
+      - REDIS_DB=0
+      - REDIS_CACHE_DB=1
+    volumes:
+      - d:/git/laravelmachine/01-Volumes/php-fpm/php.ini:/usr/local/etc/php/php.ini
+      - d:/git/laravelmachine/03-app/app:/var/www/site
+    networks:
+      - backend
+
+  mysql:
+    image: "mysqljar"
+    environment:
+      - MYSQL_DATABASE=app_db
+      - MYSQL_USER=app_user
+      - MYSQL_PASSWORD=app_password
+      - MYSQL_ROOT_PASSWORD=@M@m@ms@k@@@
+    volumes:
+      - d:/git/laravelmachine/01-Volumes/mysql/data:/var/lib/mysql
+    networks:
+      - backend
+
+  redis:
+      image: 'redisjar'
+      environment:
+      - REDIS_PASSWORD=my_master_password
+      volumes:
+        - d:/git/laravelmachine/01-Volumes/redis/data:/data
+      networks:
+        - backend     
+
+  composer:
+    image: "jarzamendia/composer-builder"
+    volumes:
+      - d:/git/laravelmachine/03-app/app:/var/www/html
+    networks:
+      - backend
+
+  elasticsearch:
+      image: elasticsearchjar
+      volumes:
+        - d:/git/laravelmachine/01-Volumes/elasticsearch:/usr/share/elasticsearch/data
+      environment:
+        - cluster.name=laravel-cluster
+        #- bootstrap.memory_lock=true #Verificaremos isto melhor... Os ulimits não funcionam!
+        - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      networks:
+        - frontend
+        - backend
+
+networks:
+  backend:
+  frontend:
