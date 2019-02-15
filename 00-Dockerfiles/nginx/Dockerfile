@@ -32,3 +32,21 @@ VOLUME /etc/nginx/ssl
 CMD ["/bin/sh", "/opt/startup.sh"]
 
 EXPOSE 80 443
+
+# Build args.
+ARG BUILD_DATE
+ARG VCS_REF
+ARG BUILD_VERSION
+
+# Labels.
+LABEL maintainer "jearzamendia@gmail.com" description "Joao E. Arzamendia"
+LABEL org.label-schema.schema-version="1.0"
+LABEL org.label-schema.build-date=$BUILD_DATE
+LABEL org.label-schema.name="jarzamendia/nginx"
+LABEL org.label-schema.description="Nginx Server"
+LABEL org.label-schema.url="https://www.nginx.com//"
+LABEL org.label-schema.vcs-url="https://github.com/jarzamendia/nginx"
+LABEL org.label-schema.vcs-ref=$VCS_REF
+LABEL org.label-schema.vendor="NGINX Inc"
+LABEL org.label-schema.version=$BUILD_VERSION
+LABEL org.label-schema.docker.cmd="docker run --name some-nginx -v /some/content:/usr/share/nginx/html -d jarzamendia/nginx:tag"

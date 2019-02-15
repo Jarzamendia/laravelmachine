@@ -3,7 +3,7 @@ version: "3.3" #Versão do arquivo de configuração.
 services:
 
   nginx:
-    image: "nginxjar"
+    image: "jarzamendia/nginx:1.14.2-alpine"
     volumes:
       - d:/git/laravelmachine/03-app/app:/var/www/site
       - d:/git/laravelmachine/01-Volumes/nginx/logs:/var/log/nginx
@@ -26,7 +26,7 @@ services:
       - backend
 
   php-fpm:
-    image: "phpjar"
+    image: "jarzamendia/php:7.2-fpm-alpine"
     environment:
       - DB_HOST=mysql
       - DB_PORT=3306
@@ -45,8 +45,9 @@ services:
       - backend
 
   mysql:
-    image: "mysqljar"
+    image: "jarzamendia/mysql:5.7.25"
     environment:
+      - MYSQL_HOST=mysql
       - MYSQL_DATABASE=app_db
       - MYSQL_USER=app_user
       - MYSQL_PASSWORD=app_password
@@ -55,9 +56,14 @@ services:
       - d:/git/laravelmachine/01-Volumes/mysql/data:/var/lib/mysql
     networks:
       - backend
+    ports:
+        - target: 3306
+          published: 3306
+          protocol: tcp
+          mode: host
 
   redis:
-      image: 'redisjar'
+      image: 'jarzamendia/redis:5.0.3-alpine'
       environment:
       - REDIS_PASSWORD=my_master_password
       volumes:
@@ -73,7 +79,7 @@ services:
       - backend
 
   elasticsearch:
-      image: elasticsearchjar
+      image: 'jarzamendia/elasticsearch:5.6.14-alpine'
       volumes:
         - d:/git/laravelmachine/01-Volumes/elasticsearch:/usr/share/elasticsearch/data
       environment:
@@ -83,7 +89,29 @@ services:
       networks:
         - frontend
         - backend
+  
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+     - PMA_ARBITRARY=1
+     - PMA_HOST=mysql
+     - PMA_USER=root
+     - PMA_PASSWORD=@M@m@ms@k@@@
+    volumes:
+      #- d:/git/laravelmachine/01-Volumes/phpmyadmin/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php
+      - d:/git/laravelmachine/01-Volumes/phpmyadmin/php.ini:/usr/local/etc/php/php.ini
+    ports:
+        - target: 80
+          published: 8080
+          protocol: tcp
+          mode: host
+    networks:
+        - backend
 
 networks:
   backend:
+    driver: overlay
+    attachable: true
   frontend:
+    driver: overlay
+    attachable: true

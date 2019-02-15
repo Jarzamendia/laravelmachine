@@ -5,7 +5,7 @@ Write-Host "Preparando variáveis."
 $DataAtual = Get-Date
 $release = Get-Content release
 $BUILD_DATE = [Xml.XmlConvert]::ToString(($DataAtual),[Xml.XmlDateTimeSerializationMode]::Utc)
-$VCS_REF = "367769da361526411ffac12dae5fa19bb87c3f6c"
+$VCS_REF = "60db7082c81f5d457046f199244c5d651f04b3fa"
 $BUILD_VERSION = (New-TimeSpan -Start (Get-Date "01/01/1970") -End ($DataAtual)).TotalSeconds
 
 Write-Host "Iniciando Build."

@@ -65,3 +65,21 @@ WORKDIR /var/www
 CMD ["php-fpm"]
 
 EXPOSE 9000
+
+# Build args.
+ARG BUILD_DATE
+ARG VCS_REF
+ARG BUILD_VERSION
+
+# Labels.
+LABEL maintainer "jearzamendia@gmail.com" description "Joao E. Arzamendia"
+LABEL org.label-schema.schema-version="1.0"
+LABEL org.label-schema.build-date=$BUILD_DATE
+LABEL org.label-schema.name="jarzamendia/php"
+LABEL org.label-schema.description="A simple and robust FastCGI Process Manager for PHP"
+LABEL org.label-schema.url="https://php-fpm.org/"
+LABEL org.label-schema.vcs-url="https://github.com/jarzamendia/nginx"
+LABEL org.label-schema.vcs-ref=$VCS_REF
+LABEL org.label-schema.vendor="php-fpm.org"
+LABEL org.label-schema.version=$BUILD_VERSION
+LABEL org.label-schema.docker.cmd="docker run -it php:tag"
