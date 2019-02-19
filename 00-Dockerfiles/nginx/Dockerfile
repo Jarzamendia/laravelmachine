@@ -1,10 +1,5 @@
 FROM nginx:1.14.2-alpine
 
-#REMOVE!
-ENV http_proxy=http://proxy.sgi.ms.gov.br:8081
-ENV https_proxy=http://proxy.sgi.ms.gov.br:8081
-ENV no_proxy="localhost,127.0.0.1"
-
 COPY ntpd.conf /etc/ntpd.conf
 
 RUN apk update \

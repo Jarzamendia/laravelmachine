@@ -1,10 +1,5 @@
 FROM php:7.2-fpm-alpine
 
-#REMOVER!
-ENV http_proxy=http://proxy.sgi.ms.gov.br:8081
-ENV https_proxy=http://proxy.sgi.ms.gov.br:8081
-ENV no_proxy="localhost,127.0.0.1"
-
 COPY ntpd.conf /etc/ntpd.conf
 
 #Primeiro vamos atualizar os pacotes existentes, e instalar os requisitos de nosso PHP.
@@ -32,9 +27,6 @@ RUN echo "export LANG=pt_BR.UTF-8" > /etc/profile.d/locale.sh && \
     echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf
 
 RUN docker-php-ext-install mysqli mbstring pdo pdo_mysql tokenizer xml
-
-#REMOVER!
-RUN pear config-set http_proxy proxy.sgi.ms.gov.br:8081
 
 #Agora vamos instalar alguns pacotes adicionais.
 #É importante verificar que o mcrypt deve ser ajustado de acordo com a versão do PHP.
